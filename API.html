@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON API in HTML</title>
+</head>
+<body>
+    <script>
+        // Simulating an API response
+        var apiResponse = {
+            "status": "success",
+            "data": {
+                "message": "Welcome to our API!",
+                "items": [
+                    {"id": 1, "name": "Item 1", "price": 10},
+                    {"id": 2, "name": "Item 2", "price": 20},
+                    {"id": 3, "name": "Item 3", "price": 15}
+                ]
+            }
+        };
+
+        // Set the content type to JSON
+        document.contentType = 'application/json';
+
+        // Output the JSON response
+        document.write(JSON.stringify(apiResponse));
+    </script>
+</body>
+</html>
