@@ -1,0 +1,99 @@
+<!doctype html>
+</head>
+<body>
+<div class="container" role="document">
+<header>
+<div class="logo">BÅ</div>
+<div>
+<h1>Privacy Policy — Bergslagen AR</h1>
+<p class="lead">Last updated: September 7, 2025</p>
+</div>
+</header>
+
+
+<main>
+<section>
+<h2>1. Introduction</h2>
+<p>Bergslagen AR is committed to protecting your privacy. This policy explains how the app operates with respect to personal data and the steps taken to minimise data collection.</p>
+</section>
+
+
+<section>
+<h2>2. Local Processing — No Personal Data Collected</h2>
+<p>Bergslagen AR processes all augmented reality and detection features locally on your device. The app does <strong>not</strong> collect, store, or transmit personal information, location data, or images captured by your device.</p>
+</section>
+
+
+<section>
+<h2>3. Mapbox</h2>
+<p>Bergslagen AR uses Mapbox for mapping and related map tiles. While the app itself does not send data to external servers, Mapbox may collect limited anonymous diagnostic or usage data according to Mapbox's policies. For details, please review Mapbox's privacy information.</p>
+<p class="note">Mapbox privacy details: <a class="inline" href="https://www.mapbox.com/legal/privacy" target="_blank" rel="noopener">https://www.mapbox.com/legal/privacy</a></p>
+</section>
+
+
+<section>
+<h2>4. No APIs or External Services</h2>
+<p>This version of Bergslagen AR does not use any external APIs or backend services for detection, configuration, or storage. All configuration and detection run locally on your device.</p>
+</section>
+
+
+<section>
+<h2>5. No Persistent Storage</h2>
+<p>The app does not save or transmit images, locations, or personal information to us or any third parties. Any temporary data used for live detection is kept only in memory and cleared when the app is closed or when the device reclaims resources.</p>
+</section>
+
+
+<section>
+<h2>6. Data Security</h2>
+<p>Because Bergslagen AR does not collect or transmit personal data, the risk of data breaches is minimized. We still follow secure development practices to reduce potential vulnerabilities in the app.</p>
+</section>
+
+
+<section>
+<h2>7. Children's Privacy</h2>
+<p>Bergslagen AR is not intended for children under 13 years of age. We do not knowingly collect personal information from children. If you suspect a child has shared personal information, contact us at the address below.</p>
+</section>
+
+
+<section>
+<h2>8. Changes</h2>
+<p>We may update this Privacy Policy. Any changes will be made available inside the app. Continued use after changes indicates acceptance.</p>
+</section>
+
+
+<section>
+<h2>9. Contact</h2>
+<p>If you have questions about this policy, contact us at: <a class="inline" href="mailto:info@artificialingenuity.io">info@artificialingenuity.io</a></p>
+</section>
+
+
+</main>
+
+
+<footer>
+<div class="muted">&copy; 2025 Artificial Ingenuity — Bergslagen AR</div>
+<div>
+<a class="btn" href="#" id="downloadBtn" title="Download HTML">Download HTML</a>
+</div>
+</footer>
+</div>
+
+
+<script>
+// Simple client-side download of this HTML file
+document.getElementById('downloadBtn').addEventListener('click', function (e) {
+e.preventDefault();
+const doc = '<!doctype html>\n' + document.documentElement.outerHTML;
+const blob = new Blob([doc], { type: 'text/html' });
+const url = URL.createObjectURL(blob);
+const a = document.createElement('a');
+a.href = url;
+a.download = 'privacy-policy-bergslagen-ar.html';
+document.body.appendChild(a);
+a.click();
+a.remove();
+URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>
